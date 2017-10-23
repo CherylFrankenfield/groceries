@@ -19,14 +19,14 @@ $(document).ready(function() {
         return thing
       });
 
-      var finals = [];
+      var finalItems = [];
 
-      var finals = purchases.map(function(final) {
-        final = "<li>" + final + "</li>";
-        return final
+      var finalItems = purchases.map(function(finalItem) {
+        finalItem = "<li>" + finalItem + "</li>";
+        return finalItem
       });
 
-    $("#showList").append(finals);
+    $("#showList").append(finalItems);
     $("#groceriesForm").hide();
     event.preventDefault();
   });
